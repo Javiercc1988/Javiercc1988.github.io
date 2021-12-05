@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header-footer.css" />
+    <link rel="stylesheet" href="css/registration.css" />
+    <link rel="stylesheet" href="css/buy-tickets.css" />
+    <script src="js/main.js" defer></script>
+    <script src="js/registro.js" defer></script>
+    <title>www.bustrav.com</title>
+  </head>
+
+  <body class="main-container">
+    <!-- Sección formulario LOGIN / REGISTRO empieza aquí -->
+    <div class="container_login" id="container_login">
+      <div class="popup-contenido" id="popup">
+        <div
+          class="close"
+          id="close"
+          onmouseover="Onmouse(this)"
+          onmouseout="Outmouse(this)"
+          onclick="cerrar()"
+        >
+          <i class="fas fa-times-circle"></i>
+        </div>
+        <!-- 'x' cierre de formulario -->
+
+        <h1 id="error">Login</h1>
+        <form id="contenido_form_id">
+          <input class="input1" id="user" type="text" placeholder="Usuario" />
+          <input
+            class="input2"
+            id="password"
+            type="password"
+            placeholder="Contraseña"
+          />
+          <input
+            class="boton_login button"
+            type="button"
+            value="Login"
+            onclick="login()"
+          />
+          <p>Inicia sesión con</p>
+          <div class="iconos_conexion">
+            <div>
+              <i class="fab fa-facebook-square"></i><span>Facebook</span>
+            </div>
+            <div>
+              <i class="fab fa-google-plus-square"></i><span>Google</span>
+            </div>
+          </div>
+          <!-- CIERRE ICONOS_CONEXION -->
+          <a href="">Registrate</a>
+        </form>
+      </div>
+      <!-- Cierre del contenido de popup -->
+    </div>
+    <!-- Cierre formulario login/registro-->
+    <!-- Fin formulario LOGIn/Registro popup -->
+
+    <div id="blur_container">
+      <!-- Inicio contacto para efecto BLUR -->
+      <header class="header-container-short">
+        <div class="header-top-bar">
+          <h1 class="logo"><a href="index.html">BUSTRAV.COM</a></h1>
+          <nav class="menu">
+            <ul class="menu-items">
+              <li class="menu-item"><a href="#">Sobre Nosotros</a></li>
+              <li class="menu-item"><a href="#">Contacto</a></li>
+              <li class="menu-item" id="inicioSesion" onclick="acceder()">
+                <a href="#">Login / Registro</a>
+              </li>
+            </ul>
+            <!-- Cierre lista botones menú -->
+          </nav>
+          <!-- Cierre navegación -->
+        </div>
+        <!-- Cierre top bar navegación -->
+      </header>
+      <!-- header-top-bar -->
+
+      <div class="md-stepper-horizontal orange">
+        <div class="md-step active">
+          <div class="md-step-circle"><span>1</span></div>
+          <div class="md-step-title">Selección</div>
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-bar-right"></div>
+        </div>
+        <div class="md-step">
+          <div class="md-step-circle"><span>2</span></div>
+          <div class="md-step-title">Datos</div>
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-bar-right"></div>
+        </div>
+        <div class="md-step">
+          <div class="md-step-circle"><span>3</span></div>
+          <div class="md-step-title">Pago</div>
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-bar-right"></div>
+        </div>
+        <div class="md-step">
+          <div class="md-step-circle"><span>4</span></div>
+          <div class="md-step-title">Resumen</div>
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-bar-right"></div>
+        </div>
+      </div>
+
+      <!-- TARJETA RESUMEN DE VIAJE NÚMERO 1 -->
+      <section class="section-resum-container">
+        <section class="cards-container">
+          <div class="card-buy">
+            <div class="ticket-reference">Ref. 7435 +Económico</div>
+            <div class="container-ticket">
+              <div class="ticket-time-price">
+                <div class="time-check-out">
+                  <p class="time-letter">7:41</p>
+                  <p>Valencia</p>
+                </div>
+                <span></span>
+                <p class="travel-time">3h 00m</p>
+                <span></span>
+                <div class="time-check-in">
+                  <p class="time-letter">10:41</p>
+                  <p>Madrid</p>
+                </div>
+              </div>
+              <!-- Contenedor de horas de salida y llegada -->
+              <div class="price-container">
+                <h3 class="price">57€</h3>
+                <p><i class="far fa-user"></i>Precio ida y vuelta</p>
+              </div>
+            </div>
+            <div class="control-group">
+              <!-- OPCIONES DE CHECKBOX -->
+              <label class="control control-checkbox">
+                Plaza discapacitado
+                <input type="checkbox" />
+                <div class="control_indicator"></div> </label
+              ><!-- -->
+            </div>
+            <!-- Cierre de contenedor de checkbox -->
+          </div>
+          <!-- Cierre CARD-BUY tarjetas de compra -->
+
+          <!-- TARJETA RESUMEN DE VIAJE NÚMERO 2 -->
+          <div class="card-buy">
+            <div class="ticket-reference">Ref. 6874 +Confortable</div>
+            <div class="container-ticket">
+              <div class="ticket-time-price">
+                <div class="time-check-out">
+                  <p class="time-letter">9:00</p>
+                  <p>Valencia</p>
+                </div>
+                <span></span>
+                <p class="travel-time">4h 00m</p>
+                <span></span>
+                <div class="time-check-in">
+                  <p class="time-letter">13:00</p>
+                  <p>Madrid</p>
+                </div>
+              </div>
+              <!-- Contenedor de horas de salida y llegada -->
+              <div class="price-container">
+                <h3 class="price">70€</h3>
+                <p><i class="far fa-user"></i>Precio ida y vuelta</p>
+              </div>
+            </div>
+            <div class="control-group">
+              <!-- OPCIONES DE CHECKBOX -->
+              <label class="control control-checkbox">
+                Plaza discapacitado
+                <input type="checkbox" />
+                <div class="control_indicator"></div> </label
+              ><!-- -->
+            </div>
+            <!-- Cierre de contenedor de checkbox -->
+          </div>
+          <!-- Cierre CARD-BUY tarjetas de compra -->
+
+          <!-- TARJETA RESUMEN DE VIAJE NÚMERO 3 -->
+          <div class="card-buy">
+            <div class="ticket-reference">Ref. 5435 +Rápido</div>
+            <div class="container-ticket">
+              <div class="ticket-time-price">
+                <div class="time-check-out">
+                  <p class="time-letter">6:00</p>
+                  <p>Valencia</p>
+                </div>
+                <span></span>
+                <p class="travel-time">2h 30m</p>
+                <span></span>
+                <div class="time-check-in">
+                  <p class="time-letter">8:30</p>
+                  <p>Madrid</p>
+                </div>
+              </div>
+              <!-- Contenedor de horas de salida y llegada -->
+              <div class="price-container">
+                <h3 class="price">79€</h3>
+                <p><i class="far fa-user"></i>Precio ida y vuelta</p>
+              </div>
+            </div>
+            <div class="control-group">
+              <!-- OPCIONES DE CHECKBOX -->
+              <label class="control control-checkbox">
+                Plaza discapacitado
+                <input type="checkbox" />
+                <div class="control_indicator"></div> </label
+              ><!-- -->
+            </div>
+            <!-- Cierre de contenedor de checkbox -->
+          </div>
+          <!-- Cierre CARD-BUY tarjetas de compra -->
+        </section>
+        <!-- Cierre sección tarjetas de compra -->
+
+        <!--------------------------------------->
+        <!--------------------------------------->
+        <div>
+          <!-- Columna de resumen de compra -->
+          <section class="cards-container">
+            <div class="card-resume-ida">
+              <div class="resume-part1">
+                <h5>
+                  <i class="far fa-check-circle check-icon"></i>Ida seleccionada
+                </h5>
+                <h6>Mar, 28 sept 7:41 - 10:41</h6>
+                <p>Valencia - Madrid || 3h 00m</p>
+                <hr />
+              </div>
+              <!-- Parte del resumen superior seleccionando la ida.-->
+              <div class="resume-part2">
+                <h5>
+                  <i class="far fa-check-circle check-icon"></i>Vuelta
+                  seleccionada
+                </h5>
+                <h6>Mar, 28 sept 7:41 - 10:41</h6>
+                <p>Madrid - Valencia || 3h 00m</p>
+              </div>
+              <!-- Parte del resumen superior seleccionando la vuelta-->
+            </div>
+            <!-- Cierre CARD-BUY tarjetas de compra -->
+          </section>
+          <!-- Cierre sección tarjetas de compra -->
+
+          <section class="cards-container">
+            <div class="card-resume-ida">
+              <div class="total-to-pay">
+                <h6><i class="far fa-user"></i> 1 Billete</h6>
+                <h6>TOTAL <span>57 €</span></h6>
+              </div>
+              <!-- Parte del resumen superior seleccionando la ida.-->
+            </div>
+            <!-- Cierre CARD-BUY tarjetas de compra -->
+          </section>
+          <a href="datos_pasajero.html" class="button card-resume-button">Continuar</a>
+        </div>
+        <!-- FIN Columna de resumen de compra -->
+      </section>
+
+      <footer class="footer">
+        <div class="background-footer-container">
+          <h1 class="logo">BUSTRAV.COM</h1>
+          <ul class="privacity">
+            <li class="privacity-item">Politica de privacidad</li>
+            <li class="privacity-item">Aviso legal</li>
+            <li class="privacity-item"><a href="http://www.freepik.com">Ilustration designed by upklyak / Freepik</a></li>
+          </ul>
+          <ul class="socials">
+            <li class="social-item"><i class="fab fa-youtube youtube"></i></li>
+            <li class="social-item"><i class="fab fa-twitter twitter"></i></li>
+            <li class="social-item">
+              <i class="fab fa-instagram instagram"></i>
+            </li>
+            <li class="social-item">
+              <i class="fab fa-linkedin-in linkedin"></i>
+            </li>
+            <li class="social-item">
+              <i class="fab fa-facebook-square facebook"></i>
+            </li>
+          </ul>
+          <!-- Cierre lista botones menú -->
+        </div>
+        <!-- Cierre backgroud-footer -->
+      </footer>
+      <!-- Cierre footer -->
+    </div>
+    <!-- Cierre de efecto BLUR container -->
+  </body>
+</html>
