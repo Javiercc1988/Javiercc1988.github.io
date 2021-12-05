@@ -1,0 +1,15 @@
+.titulo-anuncio{
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+.formato-imagen{
+    border-top: 5px solid #baa360;
+    border-bottom: 5px solid #baa360;
+}
+
+.texto-anuncio-grande {
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}

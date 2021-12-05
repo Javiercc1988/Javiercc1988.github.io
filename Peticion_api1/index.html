@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- <script src="./scripts/script.js" defer></script> -->
+    <script src="./scripts/script2.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Simulacion Examen</title>
+  </head>
+  <body>
+    <section id="entradas">
+      <input type="text" id="titulo" placeholder="Escribe el titulo del post" />
+      <input
+        type="button"
+        class="boton"
+        value="Buscar post"
+        onclick="buscar()"
+      />
+      <input
+        type="button"
+        class="boton"
+        value="Resetear"
+        onclick="resetear()"
+      />
+    </section>
+    <main id="principal"></main>
+  </body>
+</html>

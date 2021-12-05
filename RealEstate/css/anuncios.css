@@ -1,0 +1,72 @@
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* CUADROS ANUNCIOS */
+
+.contenedor-flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.anuncio{
+    flex: 0 0 calc(33.3% - 10px);
+    border: 1px solid #baa360;
+    background-color: #FFFBE8;
+    margin-bottom: 20px;
+}
+
+.texto-anuncios {
+    text-align: center;
+    padding: 10px;
+}
+
+.precio {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.icono-anuncios {
+    list-style: none;
+    display: flex;
+    font-size: 50px;
+    color: #baa360;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+.icono-anuncios li p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.boton-anuncio {
+    background-color:#baa360;
+    color: white;
+	border-radius: 8px;
+	border:1px solid #FFFBE8;
+	font-size:14px;
+	font-weight:bold;
+	padding:10px 35px;
+    text-decoration:none;
+    transition: all .5s;
+}
+
+.boton-anuncio:hover {
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: white;
+    color: #baa360;
+    padding: 10px 25px;
+
+}

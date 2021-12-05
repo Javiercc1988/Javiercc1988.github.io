@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+}
+
+p,h1,h3{
+    color: black;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+.centrar{
+    text-align: center;
+}
+
+.color-fondo {
+    background-color: #181b20
+}
+.color-dorado {
+    background-color: #baa360;
+}
+
+.letra_dorada {
+    color: #baa360;
+}
+
+.iconos{
+    font-size: 30px;
+    color: white;
+}
+
+.separador{
+    color: #baa360;
+    font-size: 15px;
+}
+
+.iconos:hover{
+    color: #181b20;
+}
+.borde_dorado{
+    border-color: #baa360 !important;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer{
+    height: 100px;
+}
+
+.letra_footer{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.imagen-horizontal{
+    background-image: url(../img/building-exterior-3d-rendering-with-sea-view.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    
+}
+a:hover{
+    color: white;
+}
+
+.fondo{
+    background-color: white;
+}
+
+ol{
+    width: 300px;
+    list-style: none;
+}
+
+ol li{
+    color: black;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background: white;
+    z-index: 100;
+    position: relative;
+    cursor: pointer;
+    transition: all .4s;
+}
+ol li::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    z-index: -1;
+    transition: all .4s;
+}
+ol li:hover::before{
+    width: 100%;
+}
+ol li:nth-child(1)::before{
+    background: #baa360;
+}
+ol li:nth-child(2)::before{
+    background: #baa360;
+}
+ol li:nth-child(3)::before{
+    background: #baa360;
+}
+ol li:nth-child(4)::before{
+    background: #baa360;
+}
+ol li:hover{
+    transform: translateX(20px);
+}
+
+.parallax1{
+    background-image: url(../img/living-room-tropical-style-with-armchair.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2{
+    background-image: url(../img/interior-with-bid-dining-room-of-modern-private-house.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3{
+    background-image: url(../img/sea-view-kitchen-dining-and-living-room-of-luxury-beach-house-in-modern-design.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.icono-anuncio{
+    font-size: 20px
+}
