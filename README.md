@@ -37,10 +37,11 @@ PROYECTO: MUSIC_PLAYER, VIDEO_PLAYER, PROGRESS_STEPS, NOTE_LIST.
 
 Estos proyectos son única y exclusivamente con fines educativos, se ha realizado siguiendo 
 el curso / guía / tutorial de Juan Andrés Núñez.
-https://wmedia.es/
-https://escuelavue.es/
-https://www.youtube.com/c/juanwmedia
-https://www.instagram.com/juanwmedia/
+
+https://wmedia.es/<br>
+https://escuelavue.es/<br>
+https://www.youtube.com/c/juanwmedia<br>
+https://www.instagram.com/juanwmedia/<br>
 
 <hr>
 PROYECTO: Peticion_API1,2,3,4.
