@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-html, body {
+html, body, main {
   height: 100%;
   font-family: 'Poppins', sans-serif;
 }
@@ -84,7 +84,7 @@ html, body {
 .articulos {
   margin: 1rem;
   width: 500px;
-  height: 400px;
+  height: 350px;
   background-color: white;
   padding: 2rem;
   border-radius: 1rem;
