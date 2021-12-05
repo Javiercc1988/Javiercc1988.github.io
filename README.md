@@ -26,7 +26,8 @@ COVID1:
 <a href="http://www.freepik.com">Designed by Freepik</a>
 
 <hr>
-PROYECTO: BLOG CAFE, BIENES RAICES
+PROYECTO: BLOG CAFE, BIENES RAICES.
+
 Estos proyectos se han realizado siguiendo el curso de HTML/CSS 
 impartido por Juan Pablo de la Torre Valdez en Udemy.
 <a href="https://www.udemy.com/user/juanpablodelatorrevaldez/">Acceder al curso</a>
@@ -42,6 +43,7 @@ https://www.youtube.com/c/juanwmedia
 https://www.instagram.com/juanwmedia/
 
 <hr>
-PROYECTO: Peticion_API1,2,3,4
+PROYECTO: Peticion_API1,2,3,4.
+
 Se han realizado como tareas de la asignatura de Despliegue de aplicaciones en entorno
 cliente.
