@@ -30,6 +30,7 @@ PROYECTO: BLOG CAFE, BIENES RAICES.
 
 Estos proyectos se han realizado siguiendo el curso de HTML/CSS 
 impartido por Juan Pablo de la Torre Valdez en Udemy.
+
 <a href="https://www.udemy.com/user/juanpablodelatorrevaldez/">Acceder al curso</a>
 
 <hr>
