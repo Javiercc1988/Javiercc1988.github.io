@@ -1,0 +1,53 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+html,body
+    font-family: sans-serif
+    height: 100%
+    background-color: yellow
+
+
+body
+    display: flex
+    align-items: center
+
+button
+    width: 80px
+    height: 80px
+    position: fixed
+    top: 50%
+    left: 100
+    right: 0
+    bottom: 0
+    border-radius: 10px
+    font-size: 1rem
+    border: none
+    outline: none
+    cursor: pointer
+    transition: .8s all ease
+    margin: 0 1rem 0 0
+
+    &:hover
+        box-shadow: 5px 5px 5px black
+
+
+.contenedor-principal
+    height: 100%
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+
+.container
+    margin: 2rem
+    flex-basis: calc(25%)
+    text-align: center
+    border: 1px solid black
+    box-shadow: 5px 5px 5px black
+    background-color: white
+    
+    img
+        width: 100%
+    
+

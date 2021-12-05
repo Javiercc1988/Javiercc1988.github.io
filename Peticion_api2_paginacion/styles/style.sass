@@ -1,0 +1,84 @@
+// VARIABLES
+
+$azul: #008585
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+html, body
+    height: 100%
+    font-family: 'Poppins', sans-serif
+
+#entradas
+    display: flex
+    justify-content: center
+    align-content: center
+    background-color: #04003b
+    height: 150px
+
+#titulo, .boton
+    height: 3rem
+    width: 15rem
+    border-radius: 1rem
+    border: none
+    outline: none
+    margin: 3rem 1rem
+    transition: .5s all ease
+    font-weight: bold
+    padding: .5rem
+    font-size: 1rem
+
+
+.id 
+    background-color: $azul
+    width: 3rem
+    border-radius: 1rem
+
+.pag
+    border-radius: 1rem
+    width: 5rem
+    background-color: #04003b
+    color: white
+    padding: .5rem
+    font-weight: bold
+    margin: 1rem
+        
+        
+.boton
+    cursor: pointer
+    &:hover
+        background-color: $azul
+        color: white
+        box-shadow: 5px 5px 5px black
+
+#principal
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: $azul
+
+.articulos
+    margin: 1rem
+    width: 500px
+    height: 400px
+    background-color: white
+    padding: 2rem
+    border-radius: 1rem
+    text-align: center
+    transition: .5s all ease
+    box-shadow: 10px 10px 10px black
+    
+    &:hover
+        width: 520px
+
+.titulo
+    font-weight: bold
+    color: 
+
+.texto
+    margin-top: 1rem
+    text-transform: capitalize
+    
