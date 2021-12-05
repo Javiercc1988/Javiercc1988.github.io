@@ -8,7 +8,7 @@
 html, body {
   font-family: sans-serif;
   height: 100%;
-  background-color: yellow;
+  background-color: #07857e;
 }
 
 body {
@@ -21,7 +21,8 @@ body {
 }
 
 button {
-  width: 80px;
+  font-weight: bold;
+  width: 150px;
   height: 80px;
   position: fixed;
   top: 50%;
@@ -33,14 +34,16 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
-  -webkit-transition: .8s all ease;
-  transition: .8s all ease;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
   margin: 0 1rem 0 0;
 }
 
 button:hover {
   -webkit-box-shadow: 5px 5px 5px black;
           box-shadow: 5px 5px 5px black;
+  color: white;
+  background-color: #123456;
 }
 
 .contenedor-principal {
