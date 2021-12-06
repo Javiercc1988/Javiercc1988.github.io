@@ -47,5 +47,4 @@ https://www.instagram.com/juanwmedia/<br>
 <hr>
 PROYECTO: Peticion_API1,2,3,4.
 
-Se han realizado como tareas de la asignatura de Despliegue de aplicaciones en entorno
-cliente.
+Se han realizado como tareas de la asignatura de Desarrollo web cliente.
