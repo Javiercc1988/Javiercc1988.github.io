@@ -88,11 +88,17 @@ input{
   flex-direction: row;
   flex-wrap: wrap;
   list-style: none;
+  gap: 30px;
 }
 
 .destinos {
   flex-basis: 33.3%;
-  max-width: 100%;
+  max-width: 340px;
+  max-height: 210px;
+  width: 340px;
+  height: 210px;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .destinos img {
@@ -101,6 +107,14 @@ input{
   width: 340px;
   height: 210px;
   border-radius: 20px;
+  cursor: pointer;
+  transition: all .3s;
+  opacity: 0.6;
+  
+}
+.destinos img:hover{
+  transform: scale(1.2);
+  opacity: 1;
 }
 
 /* FUENTES DE SECCION DESTINOS */
