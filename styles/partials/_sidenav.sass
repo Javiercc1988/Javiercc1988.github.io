@@ -1,0 +1,118 @@
+.sidenav
+    @include flex-center-center
+    flex-direction: column
+
+    position: fixed
+    top: 0
+    left: 0
+
+    height: 100%
+    width: 100%
+
+    padding: 0.8rem 1rem
+    transition: all 0.4s ease-in-out
+    background-color: $violet-color
+    z-index: 2
+
+    &.close
+        width: 80px
+        background-color: $violet-color
+        left: -200px
+
+.menu-bar
+    margin-top: 3rem
+    height: 100%
+
+.menu-container
+    height: 100%
+
+.menu-list
+    @include flex-center-center
+    position: absolute
+    flex-direction: column
+    height: 100%
+
+    &-item
+        height: 3.125rem
+        display: flex
+        align-items: center
+        margin-top: 1rem
+        animation: prueba 1s forwards
+
+    &-item:nth-child(1)
+        margin-top: 0
+
+    &-item a
+        list-style: none
+        background-color: $violet-color
+        color: $white-color
+        display: flex
+        align-items: center
+        border-radius: 5px
+        text-decoration: none
+        padding: 0.6rem
+        max-width: 200px
+        transition: all 0.5s ease
+
+    &-item a:hover
+        background-color: $red-light-color
+
+    &-item a i
+        display: none
+        color: $white-color
+        font-size: 1.2rem
+        margin-right: 0.5rem
+        width: 30px
+        transition: all 0.3s ease
+
+.sidenav.close .menu-list .menu-list-item
+    left: -800px
+
+.text
+    font-size: 1.1rem
+    white-space: nowrap
+    color: $white-color
+    opacity: 1
+    transition: all 0.3s ease
+
+    .sidenav.close &
+        opacity: 0
+
+@keyframes prueba
+    from
+        transform: translateX(-800px)
+    to
+        transform: translateX(0)
+
+/* Media Query */
+.sidenav
+    @include desktop
+        width: 200px
+        align-items: flex-start
+        &.close
+            left: 0
+
+        .menu-list
+            align-items: flex-start
+
+            &-item
+                animation: none
+
+            &-item a:hover
+                background-color: $red-light-color
+
+            &-item a
+                background-color: transparent
+
+            &-item a i
+                display: block
+                text-align: center
+
+            &-item a:hover .text
+                opacity: 1
+                transition: all 0.3s ease
+
+    @include large
+        width: 250px
+        &.close
+            left: 0

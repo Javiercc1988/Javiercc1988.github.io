@@ -1,0 +1,60 @@
+.button-container
+    display: flex
+    justify-content: flex-end
+
+    #send-button
+        @include flex-center-center
+        position: relative
+        width: 150px
+        height: 50px
+        border-radius: 12px
+        background: $violet-color
+        border: none
+        margin-top: .5rem
+        transition: all .5s ease
+        overflow: hidden
+        font-size: 1.1rem
+        color: $white-color
+        cursor: pointer
+        outline: none
+        -webkit-box-shadow: 22px 23px 21px -25px rgba(0,0,0,0.75)
+        -moz-box-shadow: 22px 23px 21px -25px rgba(0,0,0,0.75)
+        box-shadow: 22px 23px 21px -25px rgba(0,0,0,0.75)
+
+        #button-icon-send
+            position: absolute
+            left: 110px
+            top: 14px
+            color: $white-color
+            transition: all .8s ease-in-out
+            font-size: 1.2rem
+
+        #button-icon-check
+            display: none
+            opacity: 0
+            color: #204628
+            font-size: 1.5rem
+            transition: all .5s ease
+
+            &.sended
+                display: flex
+                opacity: 1
+
+.button-container #send-button #button-icon-send.clicked
+    left: 140px
+    top: -25px
+    color: #204628
+
+.button-container #send-button.sended
+    background-color: #d5ffde
+    pointer-events: none
+
+.text-disabled
+    opacity: 0
+    display: none
+
+/* Media Query */
+
+.button-container
+    @include desktop
+        margin-right: 1.5rem

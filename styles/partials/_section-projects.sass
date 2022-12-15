@@ -1,0 +1,99 @@
+
+.section-projects
+    @include flex-center-center
+    background-color: $violet-light-color
+    width: 100%
+    flex-wrap: wrap
+    min-height: 100vh
+
+.card-container
+    display: flex
+    justify-content: center
+    flex-basis: 28%
+    margin: 1rem
+
+
+.card
+    display: flex
+    flex-direction: column
+    @include box-shadow
+    min-width: 300px
+    min-height: 380px
+    
+    max-width: 300px
+    border-radius: 1.1rem
+    margin: 1rem 0
+    
+
+    &__image
+        background-position: center center
+        background-size: 380px
+        overflow: hidden
+        border-radius: 1.1rem 1.1rem 0 0
+
+        width: 300px
+        height: 200px
+        background-repeat: no-repeat
+
+    &__info-container
+        display: flex
+        flex-direction: column
+        padding: 1rem
+        flex-grow: 1
+        background: rgba(255, 255, 255, 0.44)
+        border-radius: 0 0 1.1rem 1.1rem
+
+
+    &__info-title
+        font-size: 1.2rem
+        color: $violet-color
+        padding-bottom: .5rem
+
+    &__info-subtitle
+        color: $text-color
+        font-size: .8rem
+        padding-bottom: 1.5rem
+        min-height: 125px
+
+    &__buttons
+        display: flex
+        justify-content: flex-end
+        align-items: flex-end
+        flex-grow: 1
+        cursor: pointer
+    
+        a
+            position: relative
+            min-width: 100px
+            border-radius: 12px
+            background-color: $violet-color
+            margin-right: .5rem
+            top: 0
+            transition: .3s all ease-in-out
+
+            &:hover
+                @include box-shadow
+                top: -5px
+                
+            span
+                position: relative
+                top: -3px
+                font-size: .8rem
+                margin-left: .5rem
+                font-weight: 500
+            i
+                @include link-button
+                font-size: 1.3rem
+                min-width: 1.3rem
+                width: 2.5rem
+                text-align: center
+
+/* Media Query */
+
+.card
+    @include tablet
+
+    @include desktop
+
+    @include large
+

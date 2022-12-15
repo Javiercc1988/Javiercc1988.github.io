@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header-footer.css" />
+    <link rel="stylesheet" href="css/registration.css" />
+    <link rel="stylesheet" href="css/buy-tickets.css" />
+    <link rel="stylesheet" href="css/passenger-data.css" />
+    <script src="js/main.js" defer></script>
+    <script src="js/registro.js" defer></script>
+    <title>www.bustrav.com</title>
+  </head>
+
+  <body class="main-container">
+    <!-- Sección formulario LOGIN / REGISTRO empieza aquí -->
+    <div class="container_login" id="container_login">
+      <div class="popup-contenido" id="popup">
+        <div
+          class="close"
+          id="close"
+          onmouseover="Onmouse(this)"
+          onmouseout="Outmouse(this)"
+          onclick="cerrar()"
+        >
+          <i class="fas fa-times-circle"></i>
+        </div>
+        <!-- 'x' cierre de formulario -->
+        <div class="form-login" id="form_login">
+          <h1 id="error">Login</h1>
+          <form id="contenido_form_id">
+            <input class="input1" id="user" type="text" placeholder="Usuario" />
+            <input
+              class="input2"
+              id="password"
+              type="password"
+              placeholder="Contraseña"
+            />
+            <input
+              class="boton_login"
+              type="button"
+              value="Login"
+              onclick="login()"
+            />
+            <p>Inicia sesión con</p>
+            <div class="iconos_conexion">
+              <div>
+                <i class="fab fa-facebook-square"></i><span>Facebook</span>
+              </div>
+              <div>
+                <i class="fab fa-google-plus-square"></i><span>Google</span>
+              </div>
+            </div>
+            <!-- CIERRE ICONOS_CONEXION -->
+            <a onclick="registrarse()">Regístrate</a>
+          </form>
+        </div>
+        <!---------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------->
+        <div class="form-registro" id="form_registro">
+          <form id="contenido_registro">
+            <h1>Registro</h1>
+            <input class="input1_registro" id="nombre_usuario" type="text" placeholder="Nombre" />
+            <input class="input1_registro" id="apellidos_usuario" type="text" placeholder="Apellidos" />
+            <input class="input1_registro" id="email_usuario" type="email" placeholder="Email" />
+            <input class="input1_registro" id="pass_usuario" type="password" placeholder="Contraseña" />
+
+            <input
+              class="boton_login"
+              type="button"
+              value="Registrarse"
+              onclick="login()"
+            />
+            <hr>
+            <a href="#" id="inicioSesion" onclick="acceder()">Iniciar sesión</a>
+            <!-- CIERRE ICONOS_CONEXION -->
+          </form>
+        </div>
+      </div>
+      <!-- Cierre del contenido de popup -->
+    </div>
+    <!-- Cierre formulario login/registro-->
+    <!-- Fin formulario LOGIn/Registro popup -->
+
+    <!---------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------->
+
+    <div id="blur_container">
+      <!-- Inicio contacto para efecto BLUR -->
+      <header class="header-container-short">
+        <div class="header-top-bar">
+          <h1 class="logo"><a href="index.html">BUSTRAV.COM</a></h1>
+          <nav class="menu">
+            <ul class="menu-items">
+              <li class="menu-item"><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+              <li class="menu-item"><a href="contacto.html">Contacto</a></li>
+              <li class="menu-item" id="inicioSesion" onclick="acceder()">
+                <a href="#">Login / Registro</a>
+              </li>
+            </ul>
+            <!-- Cierre lista botones menú -->
+          </nav>
+          <!-- Cierre navegación -->
+        </div>
+        <!-- Cierre top bar navegación -->
+      </header>
+      <!-- header-top-bar -->
+
+      <div class="md-stepper-horizontal orange">
+        <div class="md-step active">
+          <div class="md-step-circle"><span><i class="far fa-check-circle"></i></span></div>
+          <div class="md-step-title">Selección</div>
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-bar-right"></div>
+        </div>
+        <div class="md-step active">
+          <div class="md-step-circle"><span><i class="far fa-check-circle"></i></span></div>
+          <div class="md-step-title">Datos</div>
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-bar-right"></div>
+        </div>
+        <div class="md-step active">
+          <div class="md-step-circle"><span><i class="far fa-check-circle"></i></span></div>
+          <div class="md-step-title">Pago</div>
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-bar-right"></div>
+        </div>
+        <div class="md-step active">
+          <div class="md-step-circle"><span><i class="far fa-check-circle"></i></span></div>
+          <div class="md-step-title">Resumen</div>
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-bar-right"></div>
+        </div>
+      </div>
+
+      <!-- TARJETA RESUMEN DE VIAJE NÚMERO 1 -->
+      <section class="section-resum-container">
+        <section class="cards-container">
+          <div class="card-confirmation">
+            <div class="ticket-reference">
+              <i class="far fa-thumbs-up"></i> CONFIRMACIÓN DE PAGO
+              <hr />
+              <div class="pay-confirmation">
+                <h1>GRACIAS POR SU COMPRA</h1>
+                <i class="far fa-thumbs-up"></i>
+                <p>Su pago # 8521345-58741 # se ha realizado correctamente, en breves recibirá un correo electrónico con el enlace de descarga de sus billetes.
+                  Puede presentarlos físicamente o utilizar el codigo QR de acceso que se adjunta a ellos.
+                </p>
+                <a href="index.html" class="button card-resume-button">Volver a inicio</a>
+              </div>
+
+              
+        </section>
+        <!-- Cierre sección tarjetas de compra -->
+      </section>
+
+      <footer class="footer">
+        <div class="background-footer-container">
+          <h1 class="logo">BUSTRAV.COM</h1>
+          <ul class="privacity">
+            <li class="privacity-item">Politica de privacidad</li>
+            <li class="privacity-item">Aviso legal</li>
+            <li class="privacity-item"><a href="http://www.freepik.com">Ilustration designed by upklyak / Freepik</a></li>
+          </ul>
+          <ul class="socials">
+            <li class="social-item"><i class="fab fa-youtube youtube"></i></li>
+            <li class="social-item"><i class="fab fa-twitter twitter"></i></li>
+            <li class="social-item">
+              <i class="fab fa-instagram instagram"></i>
+            </li>
+            <li class="social-item">
+              <i class="fab fa-linkedin-in linkedin"></i>
+            </li>
+            <li class="social-item">
+              <i class="fab fa-facebook-square facebook"></i>
+            </li>
+          </ul>
+          <!-- Cierre lista botones menú -->
+        </div>
+        <!-- Cierre backgroud-footer -->
+      </footer>
+      <!-- Cierre footer -->
+    </div>
+    <!-- Cierre de efecto BLUR container -->
+  </body>
+</html>

@@ -1,0 +1,77 @@
+@import partials/colors
+@import partials/mixins
+@import partials/fonts
+@import partials/button-send
+@import partials/hamburguer
+@import partials/sidenav
+@import partials/section-welcome
+@import partials/section-intro
+@import partials/section-projects
+@import partials/section-contact
+@import partials/section-skills
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: "Poppins", sans-serif
+
+html,
+body
+    scroll-behavior: smooth
+
+body
+    position: relative
+
+    background-color: var(--grey-background)
+    color: var(--text-color)
+    height: 100vh
+    transition: all .5s ease
+
+.sections-container
+    display: flex
+    justify-content: center
+    position: absolute
+    width: 100%
+
+#button-top-page
+    @include box-shadow
+    position: fixed
+    bottom: 25px
+    right: 25px
+    z-index: 1
+    font-size: 1.5rem
+    color: $white-color
+    background-color: $violet-color
+    padding: .5rem
+    border-radius: 12px
+    transition: all .3s ease
+    cursor: pointer
+    opacity: 0
+    &:hover
+        bottom: 30px
+
+.section
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 1rem
+
+.sections-container
+    @include flex-center-center
+    justify-content: flex-end
+    flex-direction: column
+
+.night-mode
+    position: absolute
+    font-size: 1.2rem
+    top: 45px
+    right: 38px
+    cursor: pointer
+    z-index: 1
+    transition: all .3s ease
+    color: $violet-color
+
+.typingContainer
+    transition: opacity .5s ease

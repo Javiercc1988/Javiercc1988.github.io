@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("6Al6ZnBWF85W0X0hb");
+    </script>
+    <script defer src="./script/progress-bar.js"></script>
+    <script defer src="./script/contact-form.js"></script>
+    <script defer src="./script/typing-effect.js"></script>
+    <script defer src="./script/main.js"></script>
+    <title>Portfolio Javier Callejón</title>
+  </head>
+
+  <body class="active theme">
+    <i class="fa-solid fa-moon night-mode"></i>
+
+    <label for="checkbox" class="hamburguer-container">
+      <input type="checkbox" id="checkbox" />
+      <span class="line top-line"></span>
+      <span class="line middle-line"></span>
+      <span class="line bottom-line"></span>
+    </label>
+    <nav class="sidenav close">
+      <ul class="menu-list">
+        <li class="menu-list-item">
+          <a href="#home">
+            <i class="fa-solid fa-house-user icon"></i>
+            <span class="text menu-item-text">Home</span></a
+          >
+        </li>
+        <li class="menu-list-item">
+          <a href="#intro">
+            <i class="fa-solid fa-user"></i>
+            <span class="text menu-item-text">Sobre mí</span></a
+          >
+        </li>
+        <li class="menu-list-item">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span class="text menu-item-text">Conocimientos</span></a
+          >
+        </li>
+        <li class="menu-list-item">
+          <a href="#projects">
+            <i class="fa-solid fa-briefcase"></i>
+            <span class="text menu-item-text">Proyectos</span></a
+          >
+        </li>
+        <li class="menu-list-item">
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span class="text menu-item-text">Contacto</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main class="sections-container">
+      <section id="home" class="section-welcome">
+        <span id="idd"></span><br />
+        <h1 id="typingContainer"></h1>
+      </section>
+      <section id="intro" class="section-intro">
+        <div class="container-intro">
+          <div class="img-profile"></div>
+          <div class="intro-info-container">
+            <div class="text-container">
+              <h3>¡Hola!, soy</h3>
+              <h1><span>JAVIER</span> CALLEJÓN CASABONA</h1>
+              <p>
+                <span>Desarrollador Junior </span> apasionado por la tecnología
+                y el aprendizaje continuo. Mi portfolio es una representación de
+                lo aprendido hasta ahora en mi camino como desarrollador.
+              </p>
+            </div>
+            <div class="buttons-container">
+              <div class="socials-container">
+                <a
+                  href="https://www.linkedin.com/in/javier-callej%C3%B3n-912ab2255/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/Javiercc1988" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="https://codepen.io/iKran-dev/pens/public" target="_blank"
+                  ><i class="fa-brands fa-codepen"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="section-skills">
+        <div class="progress-container">
+          <div class="circular-progress">
+            <span class="progress-value"> 0% </span>
+          </div>
+          <p class="text">HTML</p>
+        </div>
+        <div class="progress-container">
+          <div class="circular-progress">
+            <span class="progress-value"> 0% </span>
+          </div>
+          <p class="text">CSS/SASS</p>
+        </div>
+        <div class="progress-container">
+          <div class="circular-progress">
+            <span class="progress-value"> 0% </span>
+          </div>
+          <p class="text">JavaScript</p>
+        </div>
+        <div class="progress-container">
+          <div class="circular-progress">
+            <span class="progress-value"> 0% </span>
+          </div>
+          <p class="text">Angular</p>
+        </div>
+        <div class="progress-container">
+          <div class="circular-progress">
+            <span class="progress-value"> 0% </span>
+          </div>
+          <p class="text">TypeScript</p>
+        </div>
+        <div class="progress-container">
+          <div class="circular-progress">
+            <span class="progress-value"> 0% </span>
+          </div>
+          <p class="text">Node.JS</p>
+        </div>
+      </section>
+      <section id="projects" class="section-purple section-projects">
+        <div class="card-container">
+          <div class="card">
+            <div class="card__image"></div>
+            <div class="card__info-container">
+              <h1 class="card__info-title">Maquetación</h1>
+              <p class="card__info-subtitle">
+                Proyecto de maquetación web para práctica de estilos, diseño responsive y uso de FLEXBOX.<br><br>
+                Tecnologías usadas: HTML, CSS.
+              </p>
+              <div class="card__buttons">
+                <a href="https://github.com/Javiercc1988" target="_blank"
+                  ><i class="fa-brands fa-github"><span>Github</span></i></a
+                >
+                <a href="./projects/BienesRaices/index.html" target="_blank"
+                  ><i class="fa-solid fa-person-walking-dashed-line-arrow-right"
+                    ><span>Visit</span></i
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card__image"></div>
+            <div class="card__info-container">
+              <h1 class="card__info-title">Maquetación</h1>
+              <p class="card__info-subtitle">
+                Proyecto de maquetación web para práctica de estilos, diseño responsive y uso de FLEXBOX.<br><br>
+                Tecnologías usadas: HTML, CSS.
+              </p>
+              <div class="card__buttons">
+                <a href="https://github.com/Javiercc1988" target="_blank"
+                  ><i class="fa-brands fa-github"><span>Github</span></i></a
+                >
+                <a href="./projects/BlogCafe/index.html" target="_blank"
+                  ><i class="fa-solid fa-person-walking-dashed-line-arrow-right"
+                    ><span>Visit</span></i
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card__image"></div>
+            <div class="card__info-container">
+              <h1 class="card__info-title">JavaScript</h1>
+              <p class="card__info-subtitle">
+                Proyecto en JS, utilizando la permanencia de datos en "Local Storage".
+                Tecnologías usadas: HTML, CSS, JavaScript.
+              </p>
+              <div class="card__buttons">
+                <a href="https://github.com/Javiercc1988" target="_blank"
+                  ><i class="fa-brands fa-github"><span>Github</span></i></a
+                >
+                <a href="./projects/Note_list/index.html" target="_blank"
+                  ><i class="fa-solid fa-person-walking-dashed-line-arrow-right"
+                    ><span>Visit</span></i
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card__image"></div>
+            <div class="card__info-container">
+              <h1 class="card__info-title">Maquetación</h1>
+              <p class="card__info-subtitle">
+                Proyecto de maquetación web para práctica de estilos y uso de FLEXBOX.<br><br>
+                Tecnologías usadas: HTML, CSS.
+              </p>
+              <div class="card__buttons">
+                <a href="https://github.com/Javiercc1988" target="_blank"
+                  ><i class="fa-brands fa-github"><span>Github</span></i></a
+                >
+                <a href="https://github.com/Javiercc1988" target="_blank"
+                  ><i class="fa-solid fa-person-walking-dashed-line-arrow-right"
+                    ><span>Visit</span></i
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card__image"></div>
+            <div class="card__info-container">
+              <h1 class="card__info-title">Maquetación</h1>
+              <p class="card__info-subtitle">
+                Proyecto de maquetación web para práctica de estilos, uso de frameworks y FLEXBOX. Web sin lógica pero navegable.<br><br>
+                Tecnologías usadas: HTML, CSS, JavaScript, Bootstrap.
+              </p>
+              <div class="card__buttons">
+                <a href="https://github.com/Javiercc1988" target="_blank"
+                  ><i class="fa-brands fa-github"><span>Github</span></i></a
+                >
+                <a href="./projects/Bustrav_web/index.html" target="_blank"
+                  ><i class="fa-solid fa-person-walking-dashed-line-arrow-right"
+                    ><span>Visit</span></i
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card__image"></div>
+            <div class="card__info-container">
+              <h1 class="card__info-title">Proyecto Completo</h1>
+              <p class="card__info-subtitle">
+                Proyecto web completo, front-end, back-end, base de datos, diseño responsive.
+                El proyecto se nutre de datos a través de una api-rest propia. <br><br>
+                Tecnologías usadas: Angular 12, Node.JS, JWT, Bootstrap, MongoDB.
+              </p>
+              <div class="card__buttons">
+                <a href="https://github.com/Javiercc1988" target="_blank"
+                  ><i class="fa-brands fa-github"><span>Github</span></i></a
+                >
+                <a href="https://jccbeautycenter.netlify.app" target="_blank"
+                  ><i class="fa-solid fa-person-walking-dashed-line-arrow-right"
+                    ><span>Visit</span></i
+                  ></a
+                > 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section-contact">
+        <fieldset>
+          <legend>Contacto</legend>
+
+          <form id="form">
+            <div class="form-container">
+              <div class="img-form"></div>
+
+              <div class="inputs-container">
+                <div class="wrapper">
+                  <input
+                    class="form-input"
+                    type="text"
+                    value=""
+                    name="from_name"
+                    id="from_name"
+                  />
+                  <label for="from_name" class="form-label">Nombre</label>
+                </div>
+                <div class="wrapper">
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="email_id"
+                    id="email_id"
+                  />
+                  <label class="form-label" for="email_id">Email</label>
+                </div>
+                <div class="wrapper">
+                  <textarea
+                    class="form-textarea"
+                    value=""
+                    name="message"
+                    id="message"
+                  ></textarea>
+                  <label class="form-label" for="message">Mensaje</label>
+                </div>
+              </div>
+            </div>
+            <div class="button-container">
+              <button id="send-button" type="submit">
+                <p id="button-text">Enviar</p>
+                <i id="button-icon-send" class="fa-regular fa-paper-plane"></i>
+                <i id="button-icon-check" class="fa-solid fa-check"></i>
+              </button>
+            </div>
+          </form>
+        </fieldset>
+      </section>
+
+      <i id="button-top-page" class="fa-solid fa-arrow-up"></i>
+    </main>
+  </body>
+</html>

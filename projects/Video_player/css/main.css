@@ -1,0 +1,70 @@
+/* General */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #756c7eb7;
+  font-family: sans-serif;
+}
+
+/* Player */
+
+.player {
+  background-color: #52287ab7;
+  box-shadow: 2px 2px 1rem black;
+  max-width: 1280px;
+  min-width: 320px;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.video {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Controls */
+
+.controls > * {
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+}
+
+.button i {
+  font-size: 2rem;
+  color: white;
+  transition: 0.5s all ease;
+}
+
+.button i:hover {
+  color: #ff9595;
+}
+
+.progress {
+  flex-grow: 1;
+}
+
+.timestamp {
+  font-size: 1.2rem;
+  color: #ffffff;
+}

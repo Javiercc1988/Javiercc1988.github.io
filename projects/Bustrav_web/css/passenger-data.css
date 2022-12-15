@@ -1,0 +1,140 @@
+.data-form {
+    display: flex;
+}
+
+.form-col1, .form-col2 {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 300px;
+}
+
+.form-col1 input, .form-col2 input {
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    margin: .3rem;
+    background-color: var(--gray-color);
+    color: var(--blue-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-col1 input:focus, .form-col2 input:focus{
+    background-color: var(--white-color);
+    border: 1px solid var(--gray-color);
+}
+
+.form-col2 select {
+    border-radius: 10px;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    margin: 0 auto;
+    background-color: var(--gray-color);
+    color: var(--blue-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+.data-form select {
+    width: 300px;
+    margin: .3rem;
+}
+
+.data-passenger-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: 0 auto;
+}
+
+/* DATOS DE PAGO FORMULARIO */
+
+.pay-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    font-size: 48px;
+}
+
+.pay-icons i:first-of-type {
+    color: var(--blue-color);
+}
+
+.pay-icons i {
+    cursor: pointer;
+}
+
+.data-pay-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.data-pay-form input {
+    border-radius: 10px;
+    padding: 1rem;
+    width: 300px;
+    outline: none;
+    border: none;
+    margin: .5rem auto;
+    background-color: var(--gray-color);
+    color: var(--blue-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+.data-pay-form input:focus{
+    background-color: var(--white-color);
+    border: 1px solid var(--gray-color);
+}
+
+.data-pay-form input:first-of-type{
+    margin-top:3rem;
+}
+
+.data-pay-form a{
+    margin-top: 1rem;
+}
+
+/* CONFIRMACIÓN DE COMPRA */
+
+.pay-confirmation {
+    color: var(--blue-color);
+    text-align: center;
+    font-size: 16px;
+}
+
+.pay-confirmation h1 {
+    font-size: 32px;
+    margin: 1rem;
+}
+
+.pay-confirmation i {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    font-size: 48px;
+}
+
+.pay-confirmation a{
+    margin-top: 2rem;
+}
+
+.card-confirmation {
+    display: block;
+    align-items: flex-start;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: var(--white-color);
+    padding: 20px;
+    margin: 0 0 2rem 0;
+    width: 1100px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 4px -1px rgb(181, 174, 174);
+    box-shadow: 4px 4px 4px -1px rgb(181, 174, 174);
+}

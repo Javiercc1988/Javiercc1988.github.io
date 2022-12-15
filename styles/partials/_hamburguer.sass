@@ -1,0 +1,54 @@
+
+/* HAMBURGUER MENU */
+#checkbox
+    display: none
+
+.hamburguer-container
+    position: fixed
+    padding: 2rem 1.5rem
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    z-index: 3
+    left: 10px
+    top: 20px
+
+.line
+    position: absolute
+    width: 1.5rem
+    height: 3px
+    background-color: $violet-color
+    border-radius: 3px
+    transition: transform .5s, opacity 0.35s
+
+.top-line
+    transform: translateY(-7px)
+
+.bottom-line
+    transform: translateY(7px)
+
+/* Es importante utilizar un ID para el checkbox para poder hacer uso de '~' si se usa una clase no funcionará */
+#checkbox:checked ~ .top-line
+    transform: rotate(45deg)
+    background-color: $violet-light-color
+
+#checkbox:checked ~ .middle-line
+    transform: translateX(-150px)
+    opacity: 0
+
+#checkbox:checked ~ .bottom-line
+    transform: rotate(-45deg)
+    background-color: $violet-light-color
+
+@include desktop
+    .line
+        background-color: $violet-light-color
+
+    #checkbox:checked ~ .top-line
+        transform: rotate(45deg)
+        background-color: $red-light-color
+
+s    #checkbox:checked ~ .bottom-line
+        transform: rotate(-45deg)
+        background-color: $red-light-color

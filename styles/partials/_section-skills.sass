@@ -1,0 +1,56 @@
+.section-skills
+    @include section-sizes(row, 100%, 100vh)
+    @include flex-center-center
+    
+    width: 100%
+    
+    flex-wrap: wrap
+
+    .progress-container
+        display: flex
+        justify-content: center
+        border-radius: 8px
+        flex-direction: column
+        align-items: center
+        margin: 1rem
+        width: 100px
+        
+        .circular-progress
+            @include flex-center-center
+            position: relative
+            height: 80px
+            width: 80px
+            border-radius: 50%
+            background: conic-gradient($violet-color 3.6deg, $violet-light-color 0deg)
+
+            &::before
+                content: ""
+                position: absolute
+                height: 60px
+                width: 60px
+                border-radius: 50%
+                background: $grey-background
+
+            .progress-value
+                position: relative
+                color: $red-light-color
+                font-weight: bold
+                font-size: 1rem
+
+        .text
+            margin-top: .5rem
+            font-weight: bold
+            font-size: 1rem
+            color: $violet-color
+
+/* Media Query */
+
+.section-skills
+    @include tablet
+        max-width: 650px
+
+    @include desktop
+        max-width: 850px
+
+    @include large
+        max-width: 1100px

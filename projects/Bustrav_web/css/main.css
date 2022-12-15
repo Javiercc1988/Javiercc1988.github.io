@@ -1,0 +1,338 @@
+/* GENERAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --red-color: rgb(241, 125, 120);
+  --dark-red-color: rgb(236, 81, 75);
+  --blue-color: rgb(20, 123, 175);
+  --light-blue-color: rgb(70, 202, 255);
+  --gray-color: rgb(224, 224, 224);
+  --dark-gray-color: rgb(117, 117, 117);
+  --white-color: rgb(255, 255, 255);
+}
+
+html, body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 100%;
+  background-color: var(--white-color);
+}
+
+/* GENERAL CONTAINERS */
+
+.main-container {
+  margin: 0 auto;
+  max-width: 1980px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: var(--dark-gray-color);
+}
+
+input{
+  background-color: var(--white-color);
+  border: 1px solid var(--gray-color);
+}
+
+/* ESTILO GENERAL DE LOS BOTONES */
+
+.button {
+  width: 100px;
+  height: 50px;
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 18px;
+  background-color: var(--red-color);
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--dark-red-color);
+}
+
+/* SEPARADORES */
+
+.separator {
+  text-align: center;
+  font-size: 4rem;
+  color: var(--red-color);
+  margin: 1.5rem 0;
+}
+
+/* SECCION DE DESTINOS POPULARES */
+
+.destinos-container {
+  margin: 0 auto;
+  max-width: 1100px;
+  margin-top: 2rem;
+}
+
+.h1-destinos-container {
+  max-width: 1100px;
+}
+
+.seccion-destinos {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 30px;
+}
+
+.destinos {
+  flex-basis: 33.3%;
+  max-width: 340px;
+  max-height: 210px;
+  width: 340px;
+  height: 210px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.destinos img {
+  max-width: 340px;
+  max-height: 210px;
+  width: 340px;
+  height: 210px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all .3s;
+  opacity: 0.6;
+  
+}
+.destinos img:hover{
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/* FUENTES DE SECCION DESTINOS */
+
+.h1-destinos-container {
+  display: flex;
+  margin: 0 auto;
+}
+
+.h1-destinos {
+  margin: 3rem 0 1rem 3rem;
+  font-size: 46px;
+  color: var(--blue-color);
+}
+
+.h3-ciudades {
+  font-size: 22px;
+  color: var(--blue-color);
+  text-align: start;
+  margin: 0 0 2rem 3rem;
+  padding: 0.5rem;
+}
+
+.h3-ciudades span {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+/* SECCIÓN NEWSLETTER */
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.newsletter h1 {
+  color: var(--blue-color);
+  font-size: 48px;
+}
+
+.newsletter input {
+  width: 550px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 10px;
+  margin: 1.5rem 1rem 0 0;
+  padding-left: 1rem;
+}
+
+.newsletter div input:focus {
+  outline: none;
+  border: 1px solid var(--blue-color);
+}
+
+.newsletter-button {
+  width: 200px;
+}
+
+/* SECCION INVITA A UN AMIGO */
+
+.invite-friend {
+  background-color: var(--blue-color);
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 10rem;
+}
+
+.invite-friend div {
+  margin: 0 2rem;
+}
+
+.invite-friend h4 {
+  font-size: 1.2rem;
+}
+
+.invite-friend p {
+  font-size: 1rem;
+}
+
+.invite-friend-button {
+  width: 200px;
+}
+
+.preset-icon {
+  font-size: 7rem;
+  color: rgb(194, 241, 247);
+}
+
+/* ESTILOS CHECKBOX FORMULARIO BUSQUEDA */
+
+.control {
+  position: relative;
+  padding-left: 28px;
+  margin: .3rem 0 0 .4rem;
+  padding-top: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control_indicator {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 17px;
+  width: 20px;
+  background: #e6e6e6;
+  border: 0px solid #000000;
+  border-radius: 50%;
+}
+
+.control:hover input~.control_indicator, .control input:focus~.control_indicator {
+  background: #cccccc;
+}
+
+.control input:checked~.control_indicator {
+  background: var(--blue-color);
+}
+
+.control:hover input:not([disabled]):checked~.control_indicator, .control input:checked:focus~.control_indicator {
+  background: var(--blue-color);
+}
+
+.control input:disabled~.control_indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.control_indicator:after {
+  box-sizing: unset;
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.control input:checked~.control_indicator:after {
+  display: block;
+}
+
+.control-checkbox .control_indicator:after {
+  left: 8px;
+  top: 2px;
+  width: 3px;
+  height: 9px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.control-checkbox input:disabled~.control_indicator:after {
+  border-color: #7b7b7b;
+}
+
+.control-checkbox .control_indicator::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-left: -1.3rem;
+  margin-top: -1.3rem;
+  background: var(--blue-color);
+  border-radius: 3rem;
+  opacity: 0.6;
+  z-index: 99999;
+  transform: scale(0);
+}
+
+@keyframes s-ripple {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes s-ripple-dup {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+.control-checkbox input+.control_indicator::before {
+  animation: s-ripple 250ms ease-out;
+}
+
+.control-checkbox input:checked+.control_indicator::before {
+  animation-name: s-ripple-dup;
+}
+
+/********************************************************************************/

@@ -1,0 +1,186 @@
+.container_login {
+    display: none;
+    justify-content: center;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 200px;
+}
+
+/* Posicionamiento formulario */
+
+.popup-contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 450px;
+    background: var(--white-color);
+    border-radius: 20px;
+    position: absolute;
+    color: #292929;
+    transition: all 1s ease;
+}
+
+.popup-contenido form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-contenido form input {
+    width: 250px;
+    height: 35px;
+    margin: 8px;
+    text-align: center;
+    background: rgb(218, 218, 218);
+    border: none;
+    padding-right: 10px;
+    outline: none;
+    transition: all .4s;
+    border-radius: 20px;
+}
+
+.popup-contenido form input:focus {
+    background-color: var(--white-color);
+    color: var(--dark-gray-color);
+    border: 1px solid var(--gray-color);
+    padding: 0 5px;
+}
+
+.form-login h1{
+    display: flex;
+    justify-content: center;
+}
+
+.form-registro {
+    display: none;
+}
+
+.form-login form a{
+    color: var(--red-color);
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.form-login form a:hover {
+    color: var(--dark-red-color);
+}
+
+
+.popup-contenido h1 {
+    color: var(--blue-color);
+}
+
+.boton_login {
+    background-color: var(--blue-color) !important;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.boton_login:hover {
+    background-color: var(--dark-red-color) !important;
+}
+
+.form-registro hr {
+    height: 1px;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.form-registro a{
+    color:var(--red-color);
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.form-registro a:hover {
+    color:var(--dark-red-color)
+}
+
+.iconos_conexion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    width: 250px;
+    height: 40px;
+}
+
+.iconos_conexion div {
+    width: 122px;
+    height: 40px;
+    border: 2px solid #3b5998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.iconos_conexion div:nth-child(2) {
+    border: 2px solid #4285f4;
+}
+
+.iconos_conexion div i {
+    color: #3b5998;
+    margin: 8px;
+    transition: all .4s;
+    font-size: 25px;
+}
+
+.iconos_conexion div:hover i {
+    color: #e2e2e2;
+}
+
+.iconos_conexion div .fa-google-plus-square {
+    color: #4285f4;
+}
+
+.iconos_conexion div:hover:nth-child(1) {
+    background-color: #3b5998;
+    color: #e2e2e2;
+}
+
+.iconos_conexion div:hover:nth-child(2) {
+    background-color: #4285f4;
+    color: #e2e2e2;
+}
+
+.close {
+    position: absolute;
+    top: -21px;
+    right: 176px;
+    font-size: 30px;
+    color: var(--blue-color);
+    padding: 5px;
+    transition: all .4s;
+    animation: 1.5s spin 1;
+    animation-delay: 1s;
+    cursor: pointer;
+}
+
+.close-onmouse {
+    color: var(--red-color);
+    animation: 1.5s spin infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ZONA DE REGISTRO DE USUARIO */
+
+.invisible {
+    display: none;
+}
+
