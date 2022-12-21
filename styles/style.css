@@ -578,6 +578,12 @@ s #checkbox:checked ~ .bottom-line {
 }
 
 /* Media Query */
+@media only screen and (min-width: 992px) {
+  .section-projects {
+    margin-left: 4rem;
+  }
+}
+
 .section-contact {
   display: flex;
   justify-content: center;

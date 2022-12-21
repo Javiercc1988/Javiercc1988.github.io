@@ -16,6 +16,7 @@ const cardImagesArr = [
   "../assets/img/web5-inmobiliaria.jpg",
   "../assets/img/web4-buses.jpg",
   "../assets/img/web6-beauty-center.jpg",
+  "../assets/img/api_rest.png",
   "../assets/img/web7-video-player.jpg",
   "../assets/img/web8-music-player.jpg"
 ];
